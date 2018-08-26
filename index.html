@@ -70,47 +70,47 @@ mapboxgl.accessToken = 'pk.eyJ1Ijoic2hlZW5hd2hpdGUiLCJhIjoiY2plMGF0NGprMHBkMDJ4c
 var map = new mapboxgl.Map({
     container: 'map',
     style: 'mapbox://styles/sheenawhite/cjla29uxt29462sk0kwsrh5c7',
-        bearing: -0,
+        bearing: 0,
         center: [-90.402839, 38.978551],
         zoom: 2,
-        speed: 0.8,
+        speed: 1,
         pitch: 0
 });
 var chapters = {
     'welcome': {
-        bearing: -0,
+        bearing: 0,
         center: [-90.402839, 38.978551],
-        zoom: 3.4,
+        zoom: 5,
         speed: 1,
         pitch: 0
     },
     'section1': {
         bearing: 0,
         center: [-90.402839, 38.978551],
-        zoom: 13.4,
+        zoom: 5,
         speed: 1,
         pitch: 0
     },
     'section2': {
-        bearing: 54.40,
+        bearing: 0,
         center: [-90.402839, 38.978551],
-        zoom: 10.6,
-        speed: 0.5,
-        pitch: 44.50
+        zoom: 5,
+        speed: 1,
+        pitch: 0
     },
     'section3': {
         bearing: -24.01,
-        center: [-90.402839, 38.978551],
+        center: [-123.413330, 48.104920],
         zoom: 14.45,
-        speed: 0.5,
-        pitch: 60
+        speed: 1,
+        pitch: 60.00
     },
     'section4': {
-        bearing: 60,
+        bearing: 0,
         center: [-122.342540, 47.519554],
-        zoom: 16.57,
-        speed: 0.6,
-        pitch: 45
+        zoom: 5,
+        speed: 1,
+        pitch: 0
     },
 };
 // On every scroll event, check which element is on screen
