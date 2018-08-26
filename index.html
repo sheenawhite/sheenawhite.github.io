@@ -49,41 +49,29 @@ section:last-child {
     </section>
     <section id='section1' class='active'>
         <h3>Section 1</h3>
-        <p></p>
+        <p>Michigan</p>
     </section>
     <section id='section2'>
         <h3>Section 2</h3>
-        <p><br><br></p>
+        <p>Sequim<br><br></p>
     </section>
     <section id='section3'>
         <h3>Section 3</h3>
-        <p><br><br><img src="https://i.imgur.com/NF8af.jpg"><br><br></p>
+        <p>Peninsula Community College<br><br><img src="https://i.imgur.com/NF8af.jpg"><br><br></p>
     </section>
     <section id='section4'>
         <h3>Section 4</h3>
         <p><br><br><iframe src="https://giphy.com/embed/fpXxIjftmkk9y" width="224" height="240" frameBorder="0" class="giphy-embed" allowFullScreen></iframe></p>
         </p>
     </section>
-    <section id='section5'>
-        <h3>Section 5</h3>
-        <p><br><br><iframe width="560" height="315" src="https://www.youtube.com/embed/le0BLAEO93g" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe></p>
-    </section>
-    <section id='section6'>
-        <h3>Section 6</h3>
-        <p><i></i></p>
-    </section>
-    <section id='section7'>
-        <h3>Last</h3>
-        <p><br><br><iframe src="https://giphy.com/embed/lJNoBCvQYp7nq" width="300" height="300" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p></p></p>
-    </section>
 </div>
 <script>
 mapboxgl.accessToken = 'pk.eyJ1Ijoic2hlZW5hd2hpdGUiLCJhIjoiY2plMGF0NGprMHBkMDJ4cWwzMmFjamV1ciJ9.f7RWpJwEzqS_2bz32Ls20A';
 var map = new mapboxgl.Map({
     container: 'map',
-    style: 'mapbox://styles/mapbox/outdoors-v10',
+    style: 'mapbox://styles/sheenawhite/cjla29uxt29462sk0kwsrh5c7',
         bearing: -0,
-        center: [-122.292616, 47.615090],
+        center: [-90.402839, 38.978551],
         zoom: 2,
         speed: 0.8,
         pitch: 0
@@ -91,30 +79,31 @@ var map = new mapboxgl.Map({
 var chapters = {
     'welcome': {
         bearing: -0,
-        center: [-122.292616, 47.615090],
-        zoom: 2,
-        speed: 0.8,
+        center: [-90.402839, 38.978551],
+        zoom: 3.4,
+        speed: 1,
         pitch: 0
     },
     'section1': {
         bearing: 0,
-        center: [-122.300088, 47.654809],
-        zoom: 6.00,
+        center: [-90.402839, 38.978551],
+        zoom: 13.4,
+        speed: 1,
         pitch: 0
     },
     'section2': {
-        center: [-122.316235, 47.605958],
         bearing: 54.40,
-        zoom: 12.59,
-        speed: 0.6,
+        center: [-90.402839, 38.978551],
+        zoom: 10.6,
+        speed: 0.5,
         pitch: 44.50
     },
     'section3': {
-        bearing: 12.80,
-        center: [-122.328253, 47.603624],
-        zoom: 13.18,
-        speed: 0.6,
-        pitch: 0.00
+        bearing: -24.01,
+        center: [-90.402839, 38.978551],
+        zoom: 14.45,
+        speed: 0.5,
+        pitch: 60
     },
     'section4': {
         bearing: 60,
@@ -122,27 +111,6 @@ var chapters = {
         zoom: 16.57,
         speed: 0.6,
         pitch: 45
-    },
-    'section5': {
-        bearing: 15.20,
-        center: [29.027289, 41.013899],
-        zoom: 10.56,
-        pitch: 40.50,
-        speed: 0.6
-    },
-    'section6': {
-        bearing: 0,
-        center: [-63.594167, -17.701427],
-        zoom: 5.53,
-        pitch: 0,
-        speed: 0.6
-    },
-    'section7': {
-        bearing: -0,
-        center: [27.230526, 0.000000],
-        zoom: 1.18,
-        speed: 0.8,
-        pitch: 0
     },
 };
 // On every scroll event, check which element is on screen
